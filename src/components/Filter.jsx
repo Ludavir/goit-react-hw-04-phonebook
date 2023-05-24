@@ -11,7 +11,7 @@ return (
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-        onChange={onFilter}
+        onChange={e => onFilter(e.target.value)}
     />
     </label>
 );
